@@ -1,0 +1,141 @@
+/*
+colors
+	#fafafa		-->		offwhite
+	e0e0e0		-->		lightgrey
+
+dimensions
+	width 	-->  2545px
+	border-sides -->  60px
+	masthead-width -->  2425px
+	masthead carousel icon --> 15px
+	right margin to 'login' -->270px
+
+	2485 2545
+*/
+
+html { width: 100%; height: 100%; }
+body {
+	max-width: 100%; height: 100%;
+	margin: 0; padding: 0; border: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.5em; line-height: 1.8em; letter-spacing: 3px;
+	background: #e0e0e0; color: #3c3c3c;
+
+}
+
+#container {
+	width: 93%; min-height: 100%;
+	margin: 0 auto;
+	-moz-box-shadow: 0 0 35px #888;
+	-webkit-box-shadow: 0 0 35px #888;
+	box-shadow: 0 0 35px #888;
+	background: #fafafa;
+}
+
+.slide_mast_right, .slide_mast_left {
+	position: absolute;
+	top: 37%;
+	height: 80px; max-width: 50px; width:10%;
+	background: #d2d2d2;
+	opacity: .3;
+}
+
+.slide_mast_right { right:0; }
+
+.slide_mast_left { left:0; }
+
+.slide_mast_right:hover, .slide_mast_left:hover{ opacity: .6; }
+
+.centeraround {
+	display: -webkit-flex;
+	display:         flex/;
+    -webkit-align-items: center;
+          align-items: center;
+    -webkit-justify-content: center;
+          justify-content: center;
+}
+
+
+/*MASTHEAD STYLING*/
+#masthead {
+	position: relative;
+	width: 100%; height:100vh; max-height:530px;
+	color: #3c3c3c;
+	overflow: hidden;
+	font-size: 2em;
+}
+
+
+#masthead img {
+	position: absolute;
+	margin-left: -30%;
+	margin-top: -13%;
+	top: -80px;
+	min-width: 100%; max-height: 200%;	 
+	vertical-align: bottom;
+
+}
+
+
+/*Tray Styling*/
+
+.tray_slot {
+	overflow: hidden;
+	position: relative;
+	width: 100%; height: 300px;
+}
+
+
+.tray_name {
+	display: table;
+	height: 20%;
+	
+}
+
+.position_name {
+	display: table-cell;
+	vertical-align: bottom; padding-left: 1.5em; padding-bottom: .2em;
+}
+
+.carousel_wrap {
+	position: absolute;
+	width: 100%; max-height: 80%;
+}
+
+.panes {
+	margin: 0 0 0 -1.3%; padding: 0; border: 0;
+	list-style: none; white-space: nowrap;
+	padding: 0 5%;
+
+}
+
+.panes > li{
+	display: inline-block; 
+	position: relative;
+	width: 17%; text-align: center;
+	float: left; overflow:hidden; 
+	margin: 0; padding: .2% 1.5%; border: 0;
+
+}
+
+.tray_title img {
+	display:inline-block;
+	vertical-align: middle;
+	margin: 0 auto;
+	height: 100%;
+}
+
+/*Bottom Style*/
+#footer {
+	font-size: .6em;
+	display: block;
+	position: relative;
+	width, height: 100%; min-height: 75px;
+	text-align: center;
+}
+
+#footwrap {
+	margin-right: auto; margin-left: auto; padding-top: 3%;
+}
+
+

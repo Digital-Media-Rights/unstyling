@@ -1,0 +1,237 @@
+/*
+colors
+	#fafafa		-->		offwhite
+	e0e0e0		-->		lightgrey
+
+
+*/
+
+html { width: 100%; height: 100%; }
+body {
+	max-width: 100%; min-width: 444px; height: 100%;
+	margin: 0; padding: 0; border: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.5vw; line-height: 1.8em; letter-spacing: .3em;
+	background: #e0e0e0; color: #3c3c3c;
+
+}
+
+
+/* Main Frame */
+	#page {
+		width: 93vw; min-height: 100%;
+		overflow:hidden;
+		margin: 0 auto;
+		-moz-box-shadow: 0 0 35px #888;
+		-webkit-box-shadow: 0 0 35px #888;
+		box-shadow: 0 0 35px #888;
+		background: #fafafa;
+	}
+
+	#menuwrapper {
+		position: fixed;
+		width: 90vw;
+		height: 7.059vh;
+		color: #fafafa; padding: 0 1.5vw;
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 60%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(60%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 60%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+		z-index: 1;
+	}
+
+	#mastwrapper {
+		position: relative;
+		height: 72.157vh;
+		width: 100%;
+	}
+
+	#mainwrapper {
+		position: relative; padding: 0;
+		height: auto;
+
+	}
+
+	#footerwrapper {
+		position: relative;
+		height: 44vh;
+		background: pink;
+	}
+
+
+/* Menu Styling */
+
+
+/* Masthead Styling */
+
+	/*Masthead Images*/
+		#mast_slides {
+			position: absolute;
+			width: 100%; height: 100%;
+			background: url("../images/masthead_image.jpg");
+			background-position: center;
+		}
+
+
+	/*Positioning Previous and Next Buttons*/
+		#mast_prev, #mast_next{
+			position: relative;
+			display: table;
+			height: 90%; width: 5vw; 
+		}
+
+			#mast_prev{	float: left; }
+			#mast_next{	float: right; }
+
+
+	/*Styling Previous and Next Buttons*/
+		.leftbrace, .rightbrace {
+			display: table-cell; 
+			font-size: 10vh;
+			vertical-align: middle;
+		}
+
+			.leftbrace {text-align: left;}
+			.rightbrace {text-align: right;}
+
+		.leftspan, .rightspan {
+			padding: 1.33vh .75vw 4vh;
+			background: #d2d2d2;
+			opacity: .45;
+		}
+
+
+		.leftspan:hover, .rightspan:hover{
+			opacity: .9;
+		}
+
+			.leftspan { border-radius: 0 17px 17px 0; }
+			.rightspan { border-radius: 17px 0 0 17px; }
+
+
+	/* Navigational Icons */
+		#mast_icons{
+
+		}
+
+	/* This one's kinda self-explanatory */
+		#onhover_overlay {
+
+		}
+
+
+/* Main Tray Frame Styling */
+
+	/*Tray Insert Point*/
+		.trayfemale {
+			position: relative;
+		}
+
+		.tray_prev, .tray_next, .trayfemale  {
+			height: 43vh; 
+		}
+
+		.tray_prev, .tray_next  {
+			display: table;
+			width: 7.0725%;
+			margin-top: -41vh;
+			z-index: 1;
+			background: #fafafa; 
+		}
+
+			.tray_next { float: right; }
+			.tray_prev { float: left; }
+
+		.trayleft, .trayright {
+			display: table-cell;
+			vertical-align: middle; font-size: 2.666vw;
+
+		}
+
+		.trayleft:hover, .trayright:hover {
+		}
+
+			.trayleft { text-align: left; padding-left: 35%; }
+			.trayright { text-align: right; padding-right: 35%; }
+
+	/* Tray Styling */
+
+		/* Outer Shells */
+			.traymale {
+				position: relative;
+				height: 100%; width: 85.855%; margin: 0 7.0725%;
+			}
+
+			.tray_top {
+				position: relative;
+				height: 23%;
+				/* Display Stuff */
+			}
+			
+			/* Inside Tray Top */
+				.tray_name {
+					position: absolute; bottom: .8vh; left: .8vw;
+					font-weight: thin;
+				}
+
+
+			.tray_bottom {
+				position: relative;
+				height: 77%;
+				overflow: hidden;
+				/* Display Stuff */
+			}
+
+			/* Inside Tray Top */
+				.carousel {
+					position: absolute;
+					margin: 0; padding: 0;
+					list-style: none;
+					height: 100%; width: 500%;
+
+				}
+
+				.carousel li {
+					display: inline-block; overflow: hidden;
+					position: relative; float: left;
+					height: 100%; width: 4%;
+				}
+
+				.trayslot{
+					position: absolute;
+					height: 100%; width: 82%; margin:0% 9%;
+				}
+
+
+					.tray_descrip {
+						position: absolute;
+						height: 100%; width: 63%; margin:0% 9%; padding: 4% 9.5%;
+						background: #b3b3b3; color: #222; opacity: 0;
+						text-align: left; font-size: .8vw; line-height: .88vw; letter-spacing: .1666em;
+						font-weight: normal;
+					}
+
+					.tray_descrip:hover {
+						opacity: .8;
+					}
+
+					.descrip_wrap {
+						height: 92%; overflow: hidden; hyphens: auto;
+
+					}
+
+
+/* Footer Styling */
+	
+	#footer_content{
+
+	}
+
+
+/*Extra stuff*/
+#form {
+	margin-left: 30px;
+}
